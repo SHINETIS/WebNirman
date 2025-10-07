@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms & Tables - Web Nirman</title>
+</head>
+<body>
+
+  <h1>HTML Forms & Tables | Web Nirman</h1>
+  <p>In this file, we’ll learn how to create forms and tables in HTML.</p>
+
+  <hr>
+
+  <h2>Registration Form</h2>
+
+  <form>
+    <!-- Text Input -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Skills:</label><br>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country">
+      <option value="">Select your country</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Australia">Australia</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="bio">About Yourself:</label><br>
+    <textarea id="bio" rows="4" cols="40" placeholder="Write about yourself..."></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+  </form>
+
+  <hr>
+
+  <h2>Registered Users Table</h2>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Sr. No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Skills</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ram Jee Raj</td>
+        <td>ramjee@example.com</td>
+        <td>Male</td>
+        <td>HTML, CSS, JS</td>
+        <td>India</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sita Kumari</td>
+        <td>sita@example.com</td>
+        <td>Female</td>
+        <td>HTML, CSS</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+        <td>Male</td>
+        <td>JavaScript</td>
+        <td>UK</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
